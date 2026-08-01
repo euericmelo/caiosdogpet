@@ -4,13 +4,13 @@ export const business = {
   instagram: "caiosdog_pet",
   whatsapp: "5511914470113",
   address: {
-    street: "",
-    number: "",
+    street: "Rua Cícero Otávio Barbieri",
+    number: "140",
     neighborhood: "",
     city: "",
     state: "SP",
     postalCode: "",
-    formatted: "",
+    formatted: "Rua Cícero Otávio Barbieri, 140",
   },
   maps: {
     embedUrl: "",
