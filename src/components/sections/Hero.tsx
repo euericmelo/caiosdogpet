@@ -94,9 +94,8 @@ export function Hero() {
           >
             <div className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl border-[12px] border-white aspect-square md:aspect-[4/4] bg-muted">
               {/* TODO: Add real hero image - placeholder for now */}
-              <div className="w-full h-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-center p-8">
-                [Substituir por foto real do animal /hero/hero-pet.webp]
-                {/* <Image src="/images/hero/hero-pet.webp" alt="Pet feliz no banho" fill className="object-cover" priority /> */}
+              <div className="w-full h-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-center">
+                <Image src="/images/hero/hero-pet.png" alt="Pet feliz no banho" fill className="object-cover" priority />
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent" />
             </div>

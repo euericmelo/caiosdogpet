@@ -9,10 +9,9 @@ export function Sobre() {
         <div className="flex flex-col lg:flex-row items-center gap-16 max-w-6xl mx-auto">
           
           <div className="flex-1 relative order-2 lg:order-1 w-full">
-            <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-primary/5 aspect-square md:aspect-[4/3] lg:aspect-[4/5] w-full">
-              {/* TODO: Substituir por foto real da equipe ou do local /images/hero/sobre-pet.webp */}
+            <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-4 border-background bg-primary/5 aspect-square md:aspect-[4/3] lg:aspect-[4/5] w-full">
               <Image
-                src="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&q=80&w=800"
+                src="/images/hero/sobre-pet.png"
                 alt={`Sobre o ${business.name}`}
                 fill
                 className="object-cover"

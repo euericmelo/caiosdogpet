@@ -13,13 +13,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "default", size = "default", asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
     
-    // Using simple class mappings instead of class-variance-authority for lighter weight
+    // Premium, clean classes
     const variants: Record<string, string> = {
-      default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20",
-      destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-      outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+      default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm",
+      destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm",
+      outline: "border border-input bg-background hover:bg-secondary hover:text-secondary-foreground",
       secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-      ghost: "hover:bg-accent hover:text-accent-foreground",
+      ghost: "hover:bg-secondary hover:text-secondary-foreground",
       link: "text-primary underline-offset-4 hover:underline",
     }
 
@@ -33,7 +33,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cn(
-          "inline-flex items-center justify-center whitespace-nowrap text-sm font-bold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 active:scale-95",
+          "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-[1.02] active:scale-[0.98]",
           variants[variant],
           sizes[size],
           className

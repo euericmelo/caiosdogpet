@@ -5,6 +5,7 @@ import { business } from "@/config/business";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sparkles } from "lucide-react";
 import Image from "next/image";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,10 +48,14 @@ export function Header() {
           className="flex items-center gap-3 cursor-pointer group"
           onClick={() => scrollToSection("hero")}
         >
-          {/* Fallback se a logo não estiver disponível, mas deixaremos preparado */}
-          <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform duration-300 overflow-hidden relative">
-            <span className="font-bold text-xl leading-none">CP</span>
-            {/* TODO: Substituir por <Image src="/images/logo/caios-dog-pet.webp" fill alt="Logo Caio's Dog Pet" className="object-contain p-1" /> quando a logo for adicionada */}
+          <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform duration-300 overflow-hidden relative border border-border">
+            <Image 
+              src="/images/logo/caios-dog-pet.png" 
+              fill 
+              alt="Logo Caio's Dog Pet" 
+              className="object-contain p-2 dark:invert" 
+              sizes="48px"
+            />
           </div>
           <span className="text-2xl font-black tracking-tighter text-foreground group-hover:text-primary transition-colors">
             {business.name}
@@ -81,7 +86,8 @@ export function Header() {
         </nav>
 
         {/* Mobile Toggle */}
-        <div className="flex items-center gap-4 lg:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
           <button
             className="p-2 text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -90,6 +96,11 @@ export function Header() {
             {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
         </div>
+      </div>
+
+      {/* Theme toggle desktop */}
+      <div className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2">
+        <ThemeToggle />
       </div>
 
       {/* Mobile Nav */}

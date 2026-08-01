@@ -24,8 +24,14 @@ export default function Home() {
         <Galeria />
         <Sobre />
         <Avaliacoes />
-        <FAQ />
-        <FormularioAgendamento />
+        <section id="faq" className="py-24 px-6 relative border-t">
+          <FAQ />
+        </section>
+
+        {/* Formulário Agendamento */}
+        <section id="agendamento" className="py-24 px-6 relative">
+          <FormularioAgendamento />
+        </section>
         <Contato />
       </main>
       <Footer />

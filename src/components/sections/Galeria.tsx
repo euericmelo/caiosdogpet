@@ -7,20 +7,17 @@ import { Sparkles, Heart, Star } from "lucide-react";
 export function Galeria() {
   const photos = [
     {
-      // TODO: Substituir por fotos reais /images/gallery/pet-01.webp
-      url: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800",
+      url: "/images/gallery/pet-01.png",
       icon: Sparkles,
       alt: "Cachorro feliz após banho e tosa"
     },
     {
-      // TODO: Substituir por fotos reais /images/gallery/pet-02.webp
-      url: "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800",
+      url: "/images/gallery/pet-02.png",
       icon: Heart,
       alt: "Cachorro relaxando no pet shop"
     },
     {
-      // TODO: Substituir por fotos reais /images/gallery/pet-03.webp
-      url: "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=800",
+      url: "/images/gallery/pet-03.png",
       icon: Star,
       alt: "Cachorro bem cuidado com laço"
     },
