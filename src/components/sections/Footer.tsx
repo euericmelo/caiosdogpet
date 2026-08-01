@@ -1,10 +1,10 @@
 import { business } from "@/config/business";
 import { MapPin, Phone, Clock } from "lucide-react";
 import { Instagram } from "@/components/ui/icons";
-import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear(); // Ou hardcoded para 2026 como pedido
+
 
   return (
     <footer className="bg-zinc-950 text-zinc-50 pt-16 md:pt-20 pb-10">
@@ -15,10 +15,11 @@ export function Footer() {
           <div className="space-y-6 md:col-span-1">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 relative flex items-center justify-center bg-white rounded-full overflow-hidden border border-white/20 p-1">
-                <img 
+                <Image 
                   src="/images/logo/caios-dog-pet.png" 
                   alt="Logo Caio's Dog Pet" 
-                  className="w-full h-full object-contain p-1" 
+                  fill
+                  className="object-contain p-1" 
                 />
               </div>
               <span className="text-xl font-bold text-white">{business.name}</span>
@@ -100,12 +101,12 @@ export function Footer() {
                   +55 11 91447-0113
                 </a>
               </li>
-              {business.address ? (
+              {business.address?.formatted ? (
                 <li className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 mt-1">
                     <MapPin className="w-4 h-4 text-white" />
                   </div>
-                  <span>{business.address} - {business.city}, {business.state}</span>
+                  <span>{business.address.formatted}</span>
                 </li>
               ) : (
                 <li className="flex items-start gap-3 text-muted-foreground italic">

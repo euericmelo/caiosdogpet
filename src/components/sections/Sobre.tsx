@@ -30,7 +30,7 @@ export function Sobre() {
           <div className="flex-1 space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
               <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary font-bold rounded-full text-sm">
-                Conheça o Caio's Dog Pet
+                Conheça o Caio&apos;s Dog Pet
               </span>
               <h3 className="text-3xl md:text-5xl font-black text-foreground leading-tight">
                 Carinho em cada atendimento.

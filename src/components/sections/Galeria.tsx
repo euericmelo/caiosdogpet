@@ -52,7 +52,7 @@ export function Galeria() {
               />
               
               <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center backdrop-blur-[2px]">
-                <div className="bg-white p-4 rounded-2xl scale-50 group-hover:scale-100 transition-transform duration-500 text-primary shadow-2xl">
+                <div className="bg-background p-4 rounded-2xl scale-50 group-hover:scale-100 transition-transform duration-500 text-primary shadow-2xl">
                   <photo.icon className="w-8 h-8" />
                 </div>
               </div>

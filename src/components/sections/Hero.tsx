@@ -1,9 +1,9 @@
 "use client"
 
-import { business } from "@/config/business";
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ChevronRight, Sparkles, CheckCircle2, ShieldCheck, MapPin } from "lucide-react";
+import { ChevronRight, Sparkles, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {

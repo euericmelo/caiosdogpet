@@ -2,23 +2,34 @@ import { business } from "@/config/business";
 
 export interface BookingData {
   tutor: string;
+  whatsapp: string;
   pet: string;
+  size: string;
   service: string;
   date: string;
   period: string;
   taxiDog: boolean;
-  observations: string;
+  neighborhood?: string;
+  observations?: string;
 }
 
 export function formatWhatsAppMessage(data: BookingData): string {
-  const text = `Olá! Encontrei o ${business.name} pelo site e gostaria de solicitar um agendamento.\n\n` +
-    `*Tutor:* ${data.tutor}\n` +
-    `*Pet:* ${data.pet}\n` +
-    `*Serviço:* ${data.service}\n` +
-    `*Data desejada:* ${data.date}\n` +
-    `*Período:* ${data.period}\n` +
-    `*Táxi Dog:* ${data.taxiDog ? "Sim" : "Não"}\n` +
-    `*Observações:* ${data.observations || "Nenhuma"}`;
+  let text = `Olá! Encontrei o ${business.name} pelo site e gostaria de solicitar um agendamento.\n\n` +
+    `Tutor: ${data.tutor}\n` +
+    `WhatsApp: ${data.whatsapp}\n` +
+    `Pet: ${data.pet}\n` +
+    `Porte: ${data.size}\n` +
+    `Serviço: ${data.service}\n` +
+    `Data desejada: ${data.date}\n` +
+    `Período: ${data.period}\n` +
+    `Táxi Dog: ${data.taxiDog ? "Sim" : "Não"}\n`;
+    
+  if (data.taxiDog && data.neighborhood) {
+    text += `Bairro para retirada: ${data.neighborhood}\n`;
+  }
+  
+  text += `Observações: ${data.observations || "Nenhuma"}\n\n` +
+          `Aguardo a confirmação do horário. Obrigado!`;
   
   return encodeURIComponent(text);
 }

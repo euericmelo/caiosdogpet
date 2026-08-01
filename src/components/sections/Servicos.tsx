@@ -36,7 +36,7 @@ export function Servicos() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-black tracking-tight text-foreground"
           >
-            Especialidades <span className="text-primary">Caio's Dog Pet</span>
+            Especialidades <span className="text-primary">Caio&apos;s Dog Pet</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ export function Servicos() {
               <Card className="group h-full hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 border border-border bg-card rounded-3xl overflow-hidden hover:-translate-y-2">
                 <CardContent className="p-8 flex flex-col items-center text-center space-y-6 h-full justify-between">
                   <div className="space-y-6 flex flex-col items-center">
-                    <div className="p-5 bg-secondary rounded-2xl text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 group-hover:rotate-12 shadow-sm">
+                    <div className="p-5 bg-secondary rounded-2xl text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 group-hover:rotate-12 shadow-sm">
                       {iconMap[service.id] || <Droplets className="w-10 h-10" />}
                     </div>
                     <h3 className="font-black text-2xl tracking-tight">{service.title}</h3>
@@ -75,7 +75,7 @@ export function Servicos() {
                       rel="noopener noreferrer"
                       className="inline-block w-full"
                     >
-                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-colors">
+                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors">
                         Consultar pelo WhatsApp
                       </Button>
                     </a>

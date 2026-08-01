@@ -3,9 +3,19 @@ export const business = {
   slogan: "Seu melhor amigo merece esse carinho!",
   instagram: "caiosdog_pet",
   whatsapp: "5511914470113",
-  address: null, // TODO: Update when address is confirmed
-  city: null,
-  state: "SP",
+  address: {
+    street: "",
+    number: "",
+    neighborhood: "",
+    city: "",
+    state: "SP",
+    postalCode: "",
+    formatted: "",
+  },
+  maps: {
+    embedUrl: "",
+    directionsUrl: "",
+  },
   hours: {
     weekdays: "10h às 18h",
     saturday: "11h às 15h",
