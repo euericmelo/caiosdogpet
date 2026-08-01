@@ -8,7 +8,7 @@ export function Contato() {
   return (
     <section id="contato" className="py-24 bg-secondary/10">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-white rounded-[40px] shadow-2xl overflow-hidden border border-border">
+        <div className="max-w-4xl mx-auto bg-card rounded-[40px] shadow-2xl overflow-hidden border border-border">
           <div className="grid grid-cols-1 md:grid-cols-2">
             
             {/* Infos de Contato */}

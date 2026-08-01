@@ -48,12 +48,12 @@ export function Header() {
           className="flex items-center gap-3 cursor-pointer group"
           onClick={() => scrollToSection("hero")}
         >
-          <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform duration-300 overflow-hidden relative border border-border">
+          <div className="w-12 h-12 relative flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
             <Image 
               src="/images/logo/caios-dog-pet.png" 
               fill 
               alt="Logo Caio's Dog Pet" 
-              className="object-contain p-2 dark:invert" 
+              className="object-contain mix-blend-multiply dark:mix-blend-screen dark:invert" 
               sizes="48px"
             />
           </div>
@@ -77,9 +77,11 @@ export function Header() {
           
           <div className="h-6 w-px bg-border mx-2" />
           
+          <ThemeToggle />
+
           <Button
             onClick={() => scrollToSection("agendamento")}
-            className="rounded-2xl"
+            className="rounded-2xl ml-2"
           >
             Agendar pelo WhatsApp
           </Button>
@@ -98,9 +100,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Theme toggle desktop */}
-      <div className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2">
-        <ThemeToggle />
       </div>
 
       {/* Mobile Nav */}

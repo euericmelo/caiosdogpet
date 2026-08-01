@@ -7,7 +7,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear(); // Ou hardcoded para 2026 como pedido
 
   return (
-    <footer className="bg-foreground text-background pt-16 md:pt-20 pb-10">
+    <footer className="bg-zinc-950 text-zinc-50 pt-16 md:pt-20 pb-10">
       <div className="container mx-auto px-6 md:px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-16">
           

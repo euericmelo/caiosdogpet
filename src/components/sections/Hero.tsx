@@ -92,7 +92,7 @@ export function Hero() {
             viewport={{ once: true }}
             className="flex-1 relative"
           >
-            <div className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl border-[12px] border-white aspect-square md:aspect-[4/4] bg-muted">
+            <div className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl border-[12px] border-card aspect-square md:aspect-[4/4] bg-muted">
               {/* TODO: Add real hero image - placeholder for now */}
               <div className="w-full h-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-center">
                 <Image src="/images/hero/hero-pet.png" alt="Pet feliz no banho" fill className="object-cover" priority />
@@ -104,7 +104,7 @@ export function Hero() {
             <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 md:-left-10 bg-white p-6 rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-20 flex items-center gap-4 border border-border"
+              className="absolute -bottom-6 -left-6 md:-left-10 bg-card p-6 rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-20 flex items-center gap-4 border border-border"
             >
               <div className="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center text-primary">
                 <Sparkles className="w-8 h-8" />
@@ -120,7 +120,7 @@ export function Hero() {
             <motion.div
               animate={{ y: [0, 20, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute -top-6 -right-6 md:-right-10 bg-white p-4 rounded-3xl shadow-xl z-20 border border-border"
+              className="absolute -top-6 -right-6 md:-right-10 bg-card p-4 rounded-3xl shadow-xl z-20 border border-border"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-white">
