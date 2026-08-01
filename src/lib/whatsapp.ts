@@ -1,4 +1,5 @@
 import { business } from "@/config/business";
+import { formatDateBR } from "@/lib/utils";
 
 export interface BookingData {
   tutor: string;
@@ -20,7 +21,7 @@ export function formatWhatsAppMessage(data: BookingData): string {
     `Pet: ${data.pet}\n` +
     `Porte: ${data.size}\n` +
     `Serviço: ${data.service}\n` +
-    `Data desejada: ${data.date}\n` +
+    `Data desejada: ${formatDateBR(data.date)}\n` +
     `Período: ${data.period}\n` +
     `Táxi Dog: ${data.taxiDog ? "Sim" : "Não"}\n`;
     

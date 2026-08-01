@@ -1,10 +1,10 @@
 import { MetadataRoute } from 'next'
- 
+import { business } from '@/config/business'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      // TODO: Update when domain is confirmed
-      url: 'https://caiosdogpet.com.br',
+      url: business.siteUrl,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,

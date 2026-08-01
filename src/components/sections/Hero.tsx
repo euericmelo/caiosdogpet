@@ -93,9 +93,15 @@ export function Hero() {
             className="flex-1 relative"
           >
             <div className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl border-[12px] border-card aspect-square md:aspect-[4/4] bg-muted">
-              {/* TODO: Add real hero image - placeholder for now */}
               <div className="w-full h-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-center">
-                <Image src="/images/hero/hero-pet.png" alt="Pet feliz no banho" fill className="object-cover" priority />
+                <Image
+                  src="/images/hero/hero-pet.png"
+                  alt="Pet feliz no banho"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent" />
             </div>

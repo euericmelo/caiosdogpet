@@ -98,7 +98,7 @@ export function Footer() {
                   <Phone className="w-4 h-4 text-white" />
                 </div>
                 <a href={business.links.whatsapp} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  +55 11 91447-0113
+                  {business.phoneDisplay}
                 </a>
               </li>
               {business.address?.formatted ? (

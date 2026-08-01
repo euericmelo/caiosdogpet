@@ -18,15 +18,15 @@ export function BusinessHoursCard({ className = "" }: BusinessHoursCardProps) {
       <ul className="space-y-4">
         <li className="flex justify-between items-center border-b border-current/10 pb-3">
           <span className="font-medium opacity-70">Segunda a Sexta</span>
-          <span className="font-bold">10h às 18h</span>
+          <span className="font-bold">{business.hours.weekdays}</span>
         </li>
         <li className="flex justify-between items-center border-b border-current/10 pb-3">
           <span className="font-medium opacity-70">Sábado</span>
-          <span className="font-bold">11h às 15h</span>
+          <span className="font-bold">{business.hours.saturday}</span>
         </li>
         <li className="flex justify-between items-center">
           <span className="font-medium opacity-70">Domingo e feriados</span>
-          <span className="font-bold text-accent">Fechado</span>
+          <span className="font-bold text-accent">{business.hours.sunday}</span>
         </li>
       </ul>
       <p className="mt-6 text-xs text-center opacity-70">

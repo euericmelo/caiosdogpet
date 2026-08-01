@@ -1,8 +1,11 @@
 export const business = {
   name: "Caio's Dog Pet",
   slogan: "Seu melhor amigo merece esse carinho!",
+  // Domínio ainda não confirmado — trocar aqui atualiza canonical, OG, robots e sitemap de uma vez.
+  siteUrl: "https://caiosdogpet.com.br",
   instagram: "caiosdog_pet",
   whatsapp: "5511914470113",
+  phoneDisplay: "+55 11 91447-0113",
   address: {
     street: "Rua Cícero Otávio Barbieri",
     number: "140",
@@ -20,6 +23,15 @@ export const business = {
     weekdays: "10h às 18h",
     saturday: "11h às 15h",
     sunday: "Fechado",
+    // Versão legível por máquina, usada no JSON-LD. Manter em sincronia com os textos acima.
+    schema: [
+      {
+        days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "10:00",
+        closes: "18:00",
+      },
+      { days: ["Saturday"], opens: "11:00", closes: "15:00" },
+    ],
   },
   services: [
     {

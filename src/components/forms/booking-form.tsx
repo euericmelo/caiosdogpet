@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { getWhatsAppBookingLink, type BookingData } from "@/lib/whatsapp";
+import { formatDateBR } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -192,7 +193,7 @@ export function BookingForm() {
               <p><strong className="font-semibold w-24 inline-block">WhatsApp:</strong> {formData.whatsapp}</p>
               <p><strong className="font-semibold w-24 inline-block">Pet:</strong> {formData.pet} ({formData.size})</p>
               <p><strong className="font-semibold w-24 inline-block">Serviço:</strong> {formData.service}</p>
-              <p><strong className="font-semibold w-24 inline-block">Data:</strong> {formData.date}</p>
+              <p><strong className="font-semibold w-24 inline-block">Data:</strong> {formatDateBR(formData.date)}</p>
               <p><strong className="font-semibold w-24 inline-block">Período:</strong> {formData.period}</p>
               <p><strong className="font-semibold w-24 inline-block">Táxi Dog:</strong> {formData.taxiDog ? `Sim (${formData.neighborhood})` : "Não"}</p>
               {formData.observations && <p><strong className="font-semibold w-24 inline-block">Obs:</strong> {formData.observations}</p>}
