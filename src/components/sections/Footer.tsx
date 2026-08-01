@@ -14,9 +14,9 @@ export function Footer() {
           {/* Marca e Descrição */}
           <div className="space-y-6 md:col-span-1">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 relative flex items-center justify-center bg-white rounded-full overflow-hidden border border-white/20 p-1">
+              <div className="w-12 h-12 relative flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 <Image 
-                  src="/images/logo/caios-dog-pet.jpg" 
+                  src="/images/logo/caios-dog-pet.png" 
                   alt="Logo Caio's Dog Pet" 
                   fill
                   className="object-contain p-1" 

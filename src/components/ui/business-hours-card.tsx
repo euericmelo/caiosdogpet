@@ -16,20 +16,20 @@ export function BusinessHoursCard({ className = "" }: BusinessHoursCardProps) {
       </h3>
       
       <ul className="space-y-4">
-        <li className="flex justify-between items-center border-b border-border/50 pb-3">
-          <span className="font-medium text-muted-foreground">Segunda a Sexta</span>
-          <span className="font-bold text-foreground">{business.hours.weekdays}</span>
+        <li className="flex justify-between items-center border-b border-current/10 pb-3">
+          <span className="font-medium opacity-70">Segunda a Sexta</span>
+          <span className="font-bold">10h às 18h</span>
         </li>
-        <li className="flex justify-between items-center border-b border-border/50 pb-3">
-          <span className="font-medium text-muted-foreground">Sábado</span>
-          <span className="font-bold text-foreground">{business.hours.saturday}</span>
+        <li className="flex justify-between items-center border-b border-current/10 pb-3">
+          <span className="font-medium opacity-70">Sábado</span>
+          <span className="font-bold">11h às 15h</span>
         </li>
         <li className="flex justify-between items-center">
-          <span className="font-medium text-muted-foreground">Domingo e feriados</span>
-          <span className="font-bold text-accent">{business.hours.sunday}</span>
+          <span className="font-medium opacity-70">Domingo e feriados</span>
+          <span className="font-bold text-accent">Fechado</span>
         </li>
       </ul>
-      <p className="mt-6 text-xs text-center text-muted-foreground">
+      <p className="mt-6 text-xs text-center opacity-70">
         Os horários estão sujeitos à confirmação pelo WhatsApp.
       </p>
     </div>

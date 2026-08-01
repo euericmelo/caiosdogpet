@@ -46,8 +46,8 @@ export function CareCtaSection() {
               <Button
                 onClick={scrollToServicos}
                 size="lg"
-                variant="outline"
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 h-14"
+                variant="ghost"
+                className="border-2 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground h-14"
               >
                 Conhecer os serviços
               </Button>

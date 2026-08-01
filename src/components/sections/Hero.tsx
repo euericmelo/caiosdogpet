@@ -62,7 +62,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 hover:bg-secondary/50 backdrop-blur-md"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground backdrop-blur-md"
                 onClick={scrollToServicos}
               >
                 Conhecer os serviços
