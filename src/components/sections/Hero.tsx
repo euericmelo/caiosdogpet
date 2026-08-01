@@ -99,36 +99,6 @@ export function Hero() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent" />
             </div>
-
-            {/* Floating Design Elements */}
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 md:-left-10 bg-card p-6 rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-20 flex items-center gap-4 border border-border"
-            >
-              <div className="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center text-primary">
-                <Sparkles className="w-8 h-8" />
-              </div>
-              <div>
-                <p className="font-black text-lg text-foreground">Ambiente Seguro</p>
-                <p className="text-sm text-muted-foreground font-medium">
-                  Para o seu pet
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute -top-6 -right-6 md:-right-10 bg-card p-4 rounded-3xl shadow-xl z-20 border border-border"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-white">
-                  <ShieldCheck className="w-6 h-6" />
-                </div>
-                <p className="font-bold text-sm text-foreground">Muito Carinho</p>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
