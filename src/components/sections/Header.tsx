@@ -100,8 +100,6 @@ export function Header() {
         </div>
       </div>
 
-      </div>
-
       {/* Mobile Nav */}
       {isMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-xl border-b p-6 space-y-4 shadow-xl">
