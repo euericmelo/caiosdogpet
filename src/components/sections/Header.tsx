@@ -50,7 +50,7 @@ export function Header() {
         >
           <div className="w-12 h-12 relative flex items-center justify-center group-hover:scale-105 transition-transform duration-300 bg-background rounded-full overflow-hidden border-2 border-border shadow-sm p-1">
             <Image 
-              src="/images/logo/caios-dog-pet.png" 
+              src="/images/logo/caios-dog-pet.jpg" 
               fill 
               alt="Logo Caio's Dog Pet" 
               className="object-contain p-1" 
